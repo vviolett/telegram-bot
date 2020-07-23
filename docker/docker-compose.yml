@@ -1,0 +1,11 @@
+version: '2'
+services:
+  ik_travel:
+    image: postgres:10.3-alpine
+    restart: "no"
+    environment:
+      POSTGRES_DB: ik-travel
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
